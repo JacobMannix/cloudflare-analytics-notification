@@ -2,8 +2,7 @@
 
 A python script that sends a daily webhook notification (Discord message) with the most recent Cloudflare analytics for your website.
 
-### Cloudflare API Repo:
-- [python-cloudflare](https://www.github.com/cloudflare/python-cloudflare)
+##### Cloudflare API Repo: [python-cloudflare](https://www.github.com/cloudflare/python-cloudflare)
 
 ### In order for this to work...
 - You need to be using Cloudflare on your website
