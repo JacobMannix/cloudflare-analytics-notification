@@ -1,6 +1,6 @@
 # Cloudflare Analytics Notification
 
-Sends you a daily webhook notification with the most recent Cloudflare analytics for your website.
+A python script that sends a daily webhook notification (Discord message) with the most recent Cloudflare analytics for your website.
 
 ### Cloudflare API Repo:
 - [python-cloudflare](https://www.github.com/cloudflare/python-cloudflare)
@@ -8,10 +8,10 @@ Sends you a daily webhook notification with the most recent Cloudflare analytics
 ### In order for this to work...
 - You need to be using Cloudflare on your website
 - You need to have a chat app that supports webhooks (i use discord)
-- a web server to run the script on daily
+- A web server to automate running the script
 
 ### Configuring the python script...
-you need to change the bottom of the script, the 3 variables
+you need to change the 3 variables at the bottom of the script
 - email (the email of your cloudflare account)
 - token (the global API key for your cloudflare account)
 - webhook_url (the webhook URL) [I use discord]
@@ -30,17 +30,24 @@ I will show an example using Discord but this is possible with any app that uses
 
 ### Running the Python script
 You can use any computer to run the script on as long as python is installed but to get the most automation out of it I will be running this script on my Linux web server.
-- Make sure to pip install any new libraries and know where python is installed. For me python is installed at #!/usr/bin/python but yours may be different such as #!/usr/bin/env/python. This is specified at the top of the python script.
+- Make sure to pip install any new libraries and know where python is installed. For me python is installed at #!/usr/bin/python but yours may be different such as #!/usr/bin/env/python. This is line is specified at the top of the python script.
 
 #### On Linux
 If you are using a Linux web server and have python installed you just need to upload the configured script to the server make it executable and run it daily. In order to run the script daily I use crontab.
 
 ##### Make script executable
-- First we need to make the file executable, we can do this by typing 'chmod a+x '/example/file/path/CloudflareAnalyticsNotification.py'. Now run the script by typing the in the path of the file to see if it is working properly.
+- First we need to make the file executable, type: 'chmod a+x '/example/file/path/CloudflareAnalyticsNotification.py'.
+- Now run the script by typing in the path of the file to see if it is working properly.
 
 ##### Configure crontab
 - To access crontab type 'crontab -e'
 - Start a new line and configure the crontab timing, I chose once per day at 8pm, use this website [crontab.guru](https://www.crontab.guru/#00_20_*_*_*) if you want to configure it differently.
 - After settings the timing enter the path of the python file (/example/file/path/CloudflareAnalyticsNotification.py)
-- The crontab job should look something like the picture below
+- Save and exit crontab
+- The crontab job should look similar to the picture
+
+'''python
+00 20 * * * /home/mannix/python/CloudflareAnalyticsNotifications.py
+'''
+
 ![CrontabExample](crontabScreenshot.png)
