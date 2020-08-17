@@ -53,4 +53,4 @@ If you are using a Linux web server and have python installed you just need to u
 ---
 
 ### Discord Message Example
-![DiscordMessageExample](discordMessageexample.jpg)
+![DiscordMessageExample](discordMessageexample.jpg | width= 80)
