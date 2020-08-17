@@ -36,12 +36,12 @@ You can use any computer to run the script on as long as python is installed but
 If you are using a Linux web server and have python installed you just need to upload the configured script to the server make it executable and run it daily. In order to run the script daily I use crontab.
 
 ##### Make script executable
-- First we need to make the file executable, type: ```'chmod a+x '/example/file/path/CloudflareAnalyticsNotification.py'```.
-- Now run the script by typing in the path of the file to see if it is working properly.
+- First we need to make the file executable, type: ```'chmod a+x /example/file/path/CloudflareAnalyticsNotification.py```.
+- Now run the script by typing in the path of the file to see if it is working properly. ```/example/file/path/CloudflareAnalyticsNotification.py```
 
 ##### Configure crontab
-- To access crontab type 'crontab -e'
-- Start a new line and configure the crontab timing, I chose once per day at 8pm, use this website [crontab.guru](https://www.crontab.guru/#00_20_*_*_*) if you want to configure it differently.
+- To access crontab type ```crontab -e```
+- Start a new line and configure the crontab timing, I chose to run the script once per day at 8pm, use this website [crontab.guru](https://www.crontab.guru/#00_20_*_*_*) if you want to configure it differently.
 - After settings the timing enter the path of the python file ```/example/file/path/CloudflareAnalyticsNotification.py```
 - Save and exit crontab
 - The crontab job should look similar to the picture
@@ -49,5 +49,3 @@ If you are using a Linux web server and have python installed you just need to u
 ```python
 00 20 * * * /home/mannix/python/CloudflareAnalyticsNotifications.py
 ```
-
-![CrontabExample](crontabScreenshot.png)
