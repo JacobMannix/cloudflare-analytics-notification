@@ -49,3 +49,8 @@ If you are using a Linux web server and have python installed you just need to u
 ```python
 00 20 * * * /home/mannix/python/CloudflareAnalyticsNotifications.py
 ```
+
+---
+
+### Discord Message Example
+![DiscordMessageExample](discordMessageexample.jpg)
