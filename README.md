@@ -53,4 +53,8 @@ If you are using a Linux web server and have python installed you just need to u
 
 ### Discord Message Example
 
-<img src="discordMessage.jpg" width="300">
+<img src="images/discordMessage.jpg" width="300">
+
+---
+
+Licensed under the [MIT License](LICENSE).
