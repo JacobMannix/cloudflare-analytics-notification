@@ -1,6 +1,9 @@
 # Cloudflare Analytics Notification
+[![GitHub](https://img.shields.io/github/license/jacobmannix/cloudflare-analytics-notification?color=blue)](LICENSE)
+[![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/kubernetes-stafford)
+[![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/kubernetes-stafford/commits/master)
 
-A python script that sends a daily webhook notification (Discord message) with the most recent Cloudflare analytics for your website.
+> <b> A python script that sends a daily webhook notification (Discord message) with the most recent Cloudflare analytics for your website. </b>
 
 ##### Cloudflare API Repo: [python-cloudflare](https://www.github.com/cloudflare/python-cloudflare)
 
@@ -25,8 +28,7 @@ I will show an example using Discord but this is possible with any app that uses
 - Click on the Discord server you want to send these messages too.
 - Go to Server Settings -> Integrations -> View Webhooks -> either New Webhooks or click on an existing one and copy the Webhook URL
 
----
-
+#
 ### Running the Python script
 You can use any computer to run the script on as long as python is installed but to get the most automation out of it I will be running this script on my Linux web server.
 - Make sure to pip install any new libraries and know where python is installed. For me python is installed at ```#!/usr/bin/python``` but yours may be different such as ```#!/usr/bin/env/python```. This is line is specified at the top of the python script.
@@ -49,12 +51,6 @@ If you are using a Linux web server and have python installed you just need to u
 00 20 * * * /home/mannix/python/CloudflareAnalyticsNotifications.py
 ```
 
----
-
+#
 ### Discord Message Example
-
 <img src="images/discordMessage.jpg" width="300">
-
----
-
-Licensed under the [MIT License](LICENSE).
