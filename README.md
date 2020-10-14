@@ -1,7 +1,7 @@
 # Cloudflare Analytics Notification
 [![GitHub](https://img.shields.io/github/license/jacobmannix/cloudflare-analytics-notification?color=blue)](LICENSE)
-[![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/kubernetes-stafford)
-[![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/kubernetes-stafford/commits/master)
+[![GitHub top language](https://img.shields.io/github/languages/top/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/cloudflare-analytics-notification)
+[![GitHub last commit](https://img.shields.io/github/last-commit/jacobmannix/cloudflare-analytics-notification)](https://github.com/JacobMannix/cloudflare-analytics-notification/commits/master)
 
 > <b> A python script that sends a daily webhook notification (Discord message) with the most recent Cloudflare analytics for your website. </b>
 
