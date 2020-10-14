@@ -13,10 +13,12 @@
 - A web server to automate running the script
 
 ### Configuring the python script...
-you need to change the 3 variables at the bottom of the script
-- email (the email of your cloudflare account)
-- token (the global API key for your cloudflare account)
-- webhook_url (the webhook URL) [I use discord]
+You will need to change the 3 variables at the bottom of the script
+```python
+email = 'email_of_Cloudflare_account'
+token = 'global_API_Key_for_Cloudflare_account'
+webhookurl = 'webhook_URL_to_send_message(i_use_Discord)'
+```
 
 #### Accessing your Cloudflare Global API key
 - Login to [Cloudflare](https://www.cloudflare.com)
@@ -37,8 +39,10 @@ You can use any computer to run the script on as long as python is installed but
 If you are using a Linux web server and have python installed you just need to upload the configured script to the server make it executable and run it daily. In order to run the script daily I use crontab.
 
 ##### Make script executable
-- First we need to make the file executable, type: ```'chmod a+x /example/file/path/CloudflareAnalyticsNotification.py```.
-- Now run the script by typing in the path of the file to see if it is working properly. ```/example/file/path/CloudflareAnalyticsNotification.py```
+- First we need to make the file executable.
+```'chmod a+x /example/file/path/CloudflareAnalyticsNotification.py```
+- Now run the script by typing in the path of the file to see if it is working properly.
+```python /example/file/path/CloudflareAnalyticsNotification.py```
 
 ##### Configure crontab
 - To access crontab type ```crontab -e```
